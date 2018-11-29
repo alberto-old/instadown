@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Instapaper to Markdown",
   "short_name": "InstaDown",
-  "version": "0.3",
+  "version": "0.4",
 
   "description": "Export Instapaper highlights to Markdown",
   "permissions": [
@@ -33,10 +33,6 @@
   }, {
     "run_at": "document_start",
     "matches": ["https://www.instapaper.com/read/*"],
-    "js": ["jquery-3.3.1.min.js", "inject_mathjax.js"]
-  }],
-
-  "web_accesible_resources": [
-    "assets/*.png"
-  ]
+    "js": ["jquery-3.3.1.min.js"]
+  }]
 }

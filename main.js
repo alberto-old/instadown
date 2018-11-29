@@ -3,7 +3,8 @@ function createMarkdownContent() {
   highlights = document.getElementsByClassName('highlight')
   
   highlightsContent = 'data:text/markdown;charset=utf-8,'
-  highlightsContent += '#' + $("title").text() + '\n';
+  highlightsContent += '# ' + $("title").text() + '\n';
+  highlightsContent += '[Reference](' + window.location.href + ')\n';
 
   for (var i=0; i< highlights.length; i++) {
     highlightsContent += highlights[i].firstChild.textContent + '\n';
